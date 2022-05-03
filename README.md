@@ -31,7 +31,7 @@ Additional considerations:
 
 // Elements needed.
 
-1) Form w/ input: Ingridient, Quantity, and list item of measurements selects. 
+xxx1) Form w/ input: Ingridient, Quantity, and list item of measurements selects. 
 --in form, add a remove (.pop) button. 
 -- Add ingridient button to capture input. 
 form needs to preventDefault and formData.

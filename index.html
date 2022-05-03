@@ -17,6 +17,9 @@
             <section id="ingridients">Add ingridients</section>
                 <div class="ingridient">
                     <form id="add-ingridients">
+                        <div class="listed" id='list'>
+                            <ul>Ingridients needed</ul>
+                        </div>
                         <lable>Ingridient<input name='ingridients' id='ingridient'></select></lable>
                         <lable>Quantity <input type='number' name='quantity' id='quantity'></lable>
                         <lable>Measurement<select name="measurementList" id='list'>
@@ -26,10 +29,14 @@
                             <option value= 'ounces'>Oz</options>
                         </select>
                         </lable>
-
+                        <button type='submit'>Add this ingridient</button>
+                        <button type='remove'>Remove last ingridient</button>
                     </form>
                 </div>
             <section id="Save"> Save Recipie</section>
+                <div class='saves' id='save'>
+                    <button type='submit'>Save this recipie</button>
+                </div> 
             <section id="meals">Meals</section>
         </main>
 
