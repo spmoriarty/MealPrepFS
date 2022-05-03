@@ -24,3 +24,24 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+
+
+
+// Elements needed.
+
+1) Form w/ input: Ingridient, Quantity, and list item of measurements selects. 
+--in form, add a remove (.pop) button. 
+-- Add ingridient button to capture input. 
+form needs to preventDefault and formData.
+
+2) new section: the 'Save meal' area that will reflect the culmulative ingridients. 
+
+save meal:
+
+considerations
+`renderIngredient` (PURE): returns an HTML element for ingredient data	3
+`displayIngredients` (IMPURE) loops through each ingredient, calls renderIngredient and appends to DOM	2
+`renderMeal` (PURE): which returns an HTML element with meal data (name, total ingredients)	3
+`displayMeals` (IMPURE) loops through each meal, calls renderMeal and appends to DOM
