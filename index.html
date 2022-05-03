@@ -12,32 +12,36 @@
     <title>Alchemy Meal Tracker</title>
 </head>
 
-    <header> Ingridient List</header>
+    <header> Alchemist' Cookbook</header>
         <main>
-            <section id="ingridients">Add ingridients</section>
+            <section id="ingridients">Add ingredients</section>
                 <div class="ingridient">
                     <form id="add-ingridients">
                         <div class="listed" id='list'>
-                            <ul>Ingridients needed</ul>
+                            <ul>Ingredients needed</ul>
                         </div>
-                        <lable>Ingridient<input name='ingridients' id='ingridient'></select></lable>
-                        <lable>Quantity <input type='number' name='quantity' id='quantity'></lable>
-                        <lable>Measurement<select name="measurementList" id='list'>
+                        <label>Ingredient<input name='ingredients' id='ingredient'></select></label>
+                        <label>Quantity <input type='number' name='quantity' id='quantity'></label>
+                        <label>Measurement<select name="measurementList" id='list'>
                             <option value = 'cups'>Cups (c)</option>
                             <option value= 'tableSpoons'>Tbsp</option>
                             <option value= 'teaSpoons'>Tsp</option>
                             <option value= 'ounces'>Oz</options>
                         </select>
-                        </lable>
-                        <button type='submit'>Add this ingridient</button>
-                        <button type='remove'>Remove last ingridient</button>
+                        </label>
+                        <button type='submit'>Add this ingredient</button>
+                        <button type='remove'>Remove last ingredient</button>
                     </form>
                 </div>
-            <section id="Save"> Save Recipie</section>
+            <section id="Save"> Save Recipe</section>
                 <div class='saves' id='save'>
-                    <button type='submit'>Save this recipie</button>
+                    <button type='submit'>Save this recipe</button>
                 </div> 
             <section id="meals">Meals</section>
+                    <button type='remove'>Remove last recipe</button>
+                <div id="mealsSaved" id='mealSaved'> 
+                    <ul>List of saved Recipes</ul>
+                </div>
         </main>
 
 

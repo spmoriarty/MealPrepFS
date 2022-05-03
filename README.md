@@ -33,7 +33,7 @@ Additional considerations:
 
 xxx1) Form w/ input: Ingridient, Quantity, and list item of measurements selects. 
 --in form, add a remove (.pop) button. 
--- Add ingridient button to capture input. 
+xxxx-- Add ingridient button to capture input. 
 form needs to preventDefault and formData.
 
 2) new section: the 'Save meal' area that will reflect the culmulative ingridients. 
