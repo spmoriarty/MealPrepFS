@@ -46,20 +46,19 @@ function renderAllList(){
 }
 
 const mealData = document.getElementById('save');
-mealData.addEventListener('submit') {
-let mealSave = {
-  meals: mealData.get('save'),
-}
-meals.push(mealSave);
-renderMeals(save);
-mealData.reset();
-
-};
+mealData.addEventListener('submit', () => { 
+    let mealSave = {
+        meals: mealData.get('save'),
+    };
+    meals.push(mealSave);
+    renderMeals(save);
+    mealData.reset();
+});
 
 function renderMeals() {
-display.textContent = '';
-for (let save of meals){
-  const li = renderMeal(save);
-  display.append(li);
-}
+    display.textContent = '';
+    for (let save of meals){
+        const li = renderMeal(save);
+        display.append(li);
+    }
 };
