@@ -25,8 +25,9 @@ addIngredient.addEventListener('submit', (e) => {
     const ingData = new FormData(addIngredient);
     
     let ingr = {
-        ingredient: ingData.get('ingredient'),
-        quantity: ingData.get('list1')
+        ingredient: ingData.get('ingredients'),
+        quantity: ingData.get('quantity'),
+        measuremet: ingData.get('measurementList'),
     };
     list.push(ingr);
     renderAllList();
