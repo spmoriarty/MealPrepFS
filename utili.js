@@ -7,6 +7,6 @@ export function renderList(list1) {
 
 export function renderMeal(save) {
     const mealLi = document.createElement('li');
-    mealLi.textContent = `${Save.save}`;
+    mealLi.textContent = `${save.Save}`;
     return mealLi;
 }
