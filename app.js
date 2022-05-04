@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { renderList } from './utili.js';
+import { renderMeal } from './utili.js';
 // let state
 
 // set event listeners 
@@ -18,7 +19,7 @@ const display = document.getElementById('list');
 
 let meals = [];
 let list = [];
-console.log(list);
+console.log();
 addIngredient.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -31,7 +32,7 @@ addIngredient.addEventListener('submit', (e) => {
     };
     list.push(ingr);
     renderAllList();
-    console.log(list);
+    //console.log(list);
     addIngredient.reset();
 });
 
@@ -43,3 +44,22 @@ function renderAllList(){
     }
 
 }
+
+const mealData = document.getElementById('save');
+mealData.addEventListener('submit') {
+let mealSave = {
+  meals: mealData.get('save'),
+}
+meals.push(mealSave);
+renderMeals(save);
+mealData.reset();
+
+};
+
+function renderMeals() {
+display.textContent = '';
+for (let save of meals){
+  const li = renderMeal(save);
+  display.append(li);
+}
+};

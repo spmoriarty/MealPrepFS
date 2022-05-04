@@ -3,3 +3,10 @@ export function renderList(list1) {
     renderLi.textContent = `${list1.ingredient}, ${list1.quantity}, ${list1.measuremet}`;
     return renderLi;
 }
+
+
+export function renderMeal(save) {
+    const mealLi = document.createElement('li');
+    mealLi.textContent = `${Save.save}`;
+    return mealLi;
+}
