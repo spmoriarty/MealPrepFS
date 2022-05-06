@@ -12,7 +12,6 @@ import { renderMeal } from './utili.js';
 const addIngredient = document.getElementById('add-ingridients');
 const display = document.getElementById('list');
 
-const mealData = document.getElementById('mealList');
 // const addQuantity = document.getElementById('quantity');
 // const ingItem = document.getElementById('ingredient');
 // const addMeasurement = document.getElementById('list1');
