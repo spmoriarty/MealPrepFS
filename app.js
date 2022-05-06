@@ -17,7 +17,7 @@ const mealData = document.getElementById('mealList');
 // const ingItem = document.getElementById('ingredient');
 // const addMeasurement = document.getElementById('list1');
 const mealList = document.getElementById('mealList');
-
+const remove = document.getElementById('remove');
 
 let meals = [];
 let list = [];
@@ -35,8 +35,15 @@ addIngredient.addEventListener('submit', (e) => {
     };
     list.push(ingr);
     renderAllList();
+    
     //console.log(list);
+  
     addIngredient.reset();
+});
+
+remove.addEventListener('click', () => {
+    list.pop();
+    renderAllList();
 });
 
 function renderAllList(){
@@ -78,3 +85,4 @@ function renderMeals(){
         display.append(li);
     }
 }
+
