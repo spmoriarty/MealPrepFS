@@ -12,11 +12,11 @@ import { renderMeal } from './utili.js';
 const addIngredient = document.getElementById('add-ingridients');
 const display = document.getElementById('list');
 
-const mealData = document.getElementById('saves');
+const mealData = document.getElementById('mealList');
 // const addQuantity = document.getElementById('quantity');
 // const ingItem = document.getElementById('ingredient');
 // const addMeasurement = document.getElementById('list1');
-
+const mealList = document.getElementById('mealList');
 
 
 let meals = [];
@@ -49,13 +49,26 @@ function renderAllList(){
 }
 
 
-mealData.addEventListener('submit', () => { 
-    let mealSave = {
-        save: mealData.get('save'),
-    };
-    meals.push(mealSave);
-    renderMeals(save);
-    mealData.reset();
+mealList.addEventListener('submit', (e) => { 
+    e.preventDefault();
+
+    const name = new FormData(mealList);
+    const mealName = name.get('name');
+    let meal = {
+        save: list.length,
+        mealName: mealName,
+    }; 
+    //console.log(meal);
+    meals.push(meal);
+    renderMeals();
+//console.log(renderMeals());
+    // let mealSave = {
+    //     save: mealData.get('mealsSaved'),
+    // };
+    // meals.push(mealSave);
+    // renderMeals();
+    // console.log(renderMeals());
+    // mealData.reset();
 });
 
 function renderMeals(){
